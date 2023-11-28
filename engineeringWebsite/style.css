@@ -1,0 +1,717 @@
+/* ! Resetleme İşlemleri */
+
+* {
+    box-sizing: border-box;
+  }
+  
+  html,
+  body,
+  h1,
+  h2,
+  h3,
+  h4,
+  h5,
+  h6,
+  p {
+    margin: 0;
+  }
+
+  /* ! Genel İşlemler */
+
+  h2 {
+    font-size: 35px;
+    margin-top: 25px;
+  }
+
+  h3 {
+    font-size: 25px;
+  }
+
+  h4 {
+    font-size: 18px;
+    font-weight: bold;
+    text-align: center;
+    margin-top: 15px;
+  }
+
+  p {
+    font-size: 18px;
+    margin-top: 5%;
+  }
+
+  body {
+    background-color: rgb(95, 136, 170);
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: 500;
+  }
+
+  .column-25 {
+    width: 25%;
+  }
+  .column-50 {
+    width: 50%;
+  }
+  .column-75 {
+    width: 75%;
+  }
+  .column-100 {
+    width: 100%;
+  }
+
+  .content {
+    width: 100%;
+    display: flex;
+}
+
+.column-100,
+.column-75,
+.column-50,
+.column-25 {
+    float: left;
+    padding: 20px;
+}
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+.line-1 {
+    margin-top: 50px;
+    background-color: black;
+    height: 1px;
+    border: none;
+    width: 90%;
+}
+
+.line-2 {
+    height: 1px;
+    background-color: rgb(255, 255, 255);
+    border: none;
+    width: 10%;
+    position: absolute;
+}
+
+.line-3 {
+    height: 1px;
+    background-color: black;
+    border: none;
+    width: 50%;
+}
+
+.line-4 {
+    height: 1px;
+    background-color: black;
+    border: none;
+}
+
+.line-5 {
+    height: 1px;
+    width: 150px;
+    background-color: black;
+    border: none;
+}
+
+.line-6 {
+    height: 1px;
+    background-color: rgb(0, 0, 0);
+    border: none;
+    width: 10%;
+    position: absolute;
+}
+
+/* ! Img İşlemleri */
+
+img {
+    width: 100%;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+.muhendislik-img {
+    width: 25%;
+    margin-left: 75px;
+    margin-top: 50px;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.muhendislik-img:hover {
+    transform: scale(1.1);
+}
+
+
+.zoomin-img {
+    transition: 0.3s;
+}
+
+.zoomin-img:hover {
+    transform: scale(1.1);
+}
+
+.img-isguvenligi {
+    width: 80%;
+    margin-left: 150px;
+    margin-top: 75px;
+    padding-inline: 50px;
+}
+
+
+/* ! Container İşlemleri */
+
+.container-index {
+    background-color: white;
+    width: 80%;
+    margin: 55px auto;
+    height: 950px;
+}
+
+.container-hakkimizdasayfasi {
+    background-color: white;
+    width: 80%;
+    margin: 55px auto;
+    height: 800px;
+}
+
+.container-kadromuzsayfasi {
+    background-color: white;
+    width: 80%;
+    margin: 55px auto;
+    height: 900px;
+}
+
+.container-hizmetlerimizsayfasi {
+    background-color: white;
+    width: 80%;
+    margin: 55px auto;
+    height: 1500px;
+}
+
+.container-kentseldonusumsayfasi {
+    background-color: white;
+    width: 80%;
+    margin: 55px auto;
+    height: 1500px;
+}
+
+.container-muhendislikhizmetlerisayfasi {
+    background-color: white;
+    width: 80%;
+    margin: 55px auto;
+    height: 800px;
+}
+
+.container-isguvenligisayfasi {
+    background-color: white;
+    width: 80%;
+    margin: 55px auto;
+    height: 1200px;
+}
+
+.container-ekbuzmanliksayfasi {
+    background-color: white;
+    width: 80%;
+    margin: 55px auto;
+    height: 1000px;
+}
+
+.container-iletisimsayfasi {
+    background-color: rgb(20, 83, 107);
+    width: 80%;
+    margin: 55px auto;
+    padding: 50px;
+    height: 600px;
+}
+
+
+  /* ! Navbar */
+
+  nav {
+    text-align: center;
+    margin: 0px auto;     
+    height: 100px;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(20, 83, 107);
+    padding-inline: 35px;
+    font-family: 'Chivo Mono', monospace;;
+}
+
+.left img {
+    height: 90px;
+    margin-top: 5px;
+    display: block;
+}
+
+.right ul {
+    display: flex;
+    margin-right: 25px;
+}
+
+.right ul li {
+    list-style-type: none;
+    padding: 25px 25px;
+}
+
+.right ul li a {
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    color: white;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+}
+
+.right ul li a:hover {
+    color: rgb(79, 214, 255);
+}
+
+.right ul:hover li a:not(:hover) {
+    color: white;
+    opacity: 0.3;
+    filter: blur(1px);
+}
+
+/* ! Hero */
+
+.hero-image {
+    opacity: 70%;
+    width: 80%;
+    margin: 0px auto;
+    margin-top: 1%;
+}
+
+        
+.hero-text {
+    text-align: center;
+    color: white;
+    margin-top: 10px;
+ }
+
+ .animate {
+    animation: 3s animate infinite;
+  }
+
+  @keyframes animate {
+    0% {
+      color: white;
+    }
+    50% {
+      color: rgb(95, 136, 170);
+    }
+    100% {
+      color: white;
+    }
+  }
+
+ /* ! Footer */
+
+footer {
+    text-align: center;
+    margin: 0px auto;     
+    height: 10%;
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    background-color: rgb(20, 83, 107);
+}
+
+footer ul li {
+    list-style-type: none;
+}
+
+/* ! F-1 */
+
+.f-1-baslik {
+    font-size: 14px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+}
+
+.f-1 {
+    text-align: left;
+}
+
+.f-1-içerik {
+    color: rgb(255, 255, 255);
+    font-size: 12px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+
+
+.tarih {
+    margin-top: 5px;
+    display: flex;
+    color: white;
+}
+
+.takvim {
+    font-size: 15px;
+    margin-top: -1px;
+}
+
+/* ! F-2 */
+
+.f-2-baslik {
+    font-size: 14px;
+    font-weight: bolder;
+    color: rgb(255, 255, 255);
+    text-align: left;
+}
+
+.sosyalmedya {
+    display: flex;
+    color: white;
+}
+
+.fa-brands {
+    font-size: 35px;
+    cursor: pointer;
+    margin-top: 40px;
+    padding-inline: 20px;
+}
+
+.fa-brands:hover {
+    color: rgb(95, 136, 170);
+}
+
+.mailkutusu {
+    margin-top: 30px;
+    display: flex;
+}
+.submitbox {
+    height: 30px;
+    background-color: white;
+    border-radius: 10px;
+}
+
+/* ! Anasayfa */
+
+
+
+.altbaslık {
+    text-align: center;
+    margin-top: 5px;
+}
+
+.altbaslik a {
+    text-decoration: none;
+    color: black;
+}
+
+/* ! Hakkımızda Sayfası */
+
+/* ! Kadromuz Sayfası */
+
+.kadromuzsayfasi-p {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.kadromuzsayfasi-iletişim ul li {
+    list-style-type: none;
+   text-align: left;
+}
+
+.kadromuzsayfasi-iletişim ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.no {
+    margin-bottom: 50px;
+}
+
+
+/* ! Hizmetlerimiz Sayfası */
+
+
+/* ! Kentsel Dönüşüm */
+
+
+.kentseldonusum-liste ul {
+    margin-top: 80px;
+}
+
+.kentseldonusum-liste ul li {
+    list-style-type: none;
+    margin-top: 10px;
+}
+
+.kentseldonusum-liste ul li a:hover {
+    background-color: rgb(179, 179, 179);
+}
+
+/* ! Ekb Uzmanlık Sayfası */
+
+
+.ekb-img {
+    width: 50%;
+}
+
+/* ! İş Güvenliği Sayfası */
+
+.isguvenligi-liste ul li a {
+    margin-top: 20px;
+}
+
+.isguvenligi-liste ul {
+    margin-top: 20px;
+}
+
+.isguvenligi-liste ul li {
+    list-style-type: none;
+    margin-top: 15px;
+}
+
+.isguvenligi-liste ul li a:hover {
+    background-color: rgb(179, 179, 179);
+}
+
+
+/* ! Mühendislik Hizmetleri Sayfası */
+
+
+
+/* ! İletişim Sayfası */
+
+
+
+.iletisimsayfasi-icon ul li {
+    list-style-type: none;
+}
+
+.iletisimsayfasi-icon ul li a {
+    list-style-type: none;
+    margin-left: 5px;
+}
+
+.iletisimsayfasi-isim {
+    margin-top: 50px;
+}
+
+
+.harita {
+    margin-top: 10px;
+    width: 100%;
+    height: 313px;
+}
+
+/* ! Cards */
+
+  .cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* gap: 5px; */
+    padding: 10px;
+  }
+
+  .card {
+    display: grid;
+    padding: 40px;
+  }
+
+
+/* ! Responsive */
+
+@media screen and (max-width:1500px) {
+
+    .right ul li {
+        padding-inline: 5px;
+    }
+
+    .right ul li a {
+        font-size: 12px;
+    }
+
+    .left img {
+        height: 70px;
+        margin-top: 15px;
+    }
+    
+}
+
+@media screen and (max-width:1350px) {
+    
+    .cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+    .column-25,
+    .column-75 {
+        width: 50%;
+    }
+    .vizyonumuz {
+        margin-top: -600px;
+    }
+
+    .container-index {
+        height: 80%;
+    }
+
+    .container-hakkimizdasayfasi {
+        height: 1500px
+    }
+
+    .container-kadromuzsayfasi {
+        height: 1800px
+    }
+
+    .container-hizmetlerimizsayfasi {
+        height: 1600px
+    }
+
+    .container-ekbuzmanliksayfasi {
+        height: 2000px;
+    }
+}
+
+@media screen and (max-width:950px) {
+
+    .bilgi-resim {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .column-75,
+    .column-25,
+    .column-50 {
+        width: 100%;
+    }
+    .content {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .vizyonumuz {
+        margin-top: 10px;
+    }
+
+    .muhendislik-img {
+        width: 30%;
+    }
+
+    .container-muhendislikhizmetlerisayfasi {
+        height: 1300px;
+    }
+
+    .container-kadromuzsayfasi {
+        height: 3400px;
+    }
+
+    .container-hakkimizdasayfasi {
+        height: 3000px
+    }
+
+    .container-hizmetlerimizsayfasi {
+         height: 3200px
+     }
+
+     .container-iletisimsayfasi {
+        height: 1200px
+    }
+
+    .container-kentseldonusumsayfasi {
+        height: 2200px
+    }
+
+    .container-isguvenligisayfasi {
+        height: 1700px;
+    }
+}
+
+@media screen and (max-width:850px) {
+
+    .hero-text {
+        font-size: 18px;
+    }
+
+    nav {
+        height: 200px;
+    }
+    
+    .right ul {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .right ul li {
+        padding: 10px;
+    }
+    
+    .right ul li a {
+        text-decoration: none;
+        font-size: 14px;
+        font-weight: 600;
+        color: white;
+    }
+    
+}
+
+@media screen and (max-width:800px) {
+    
+    .cards {
+        grid-template-columns: repeat(1, 1fr);
+      }
+}
+
+@media screen and (max-width:500px) {
+
+    .hero-text {
+        font-size: 12px;
+    }
+
+    nav {
+        margin: 0px auto;     
+        height: 280px;
+        display: flex;
+        flex-direction: column;
+    }
+    
+    .left img {
+        height: 100px;
+        width: 250px;
+        margin-top: 15px;
+        display: block;
+    }
+    
+    .right ul li {
+        padding: 5px;
+    }
+    
+    .right ul li a {
+        font-size: 12px;
+    }
+    
+}
+
+@media screen and (max-width:450px) {
+
+    nav {
+        padding: 0px 20px;
+    }
+
+    footer ul {
+        padding: 0px;
+    }
+}
+
+@media screen and (max-width:320px) {
+
+    nav {
+        padding: 0px 5px;
+    }
+
+    .left img {
+        width: 250px;
+        margin-top: 15px;
+        display: block;
+    }
+    
+    
+}
